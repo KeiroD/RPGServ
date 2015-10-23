@@ -1,0 +1,2 @@
+# RPGServ
+RPGServ for Anope.
