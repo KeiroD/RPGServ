@@ -13,6 +13,6 @@ To have RPGServ work, you need to have an `rpgserv.conf` in the `conf` folder fo
 
 A sample `rpgserv.conf` has been provided. Adapt as you see fit.
 
-# A Note of Warning
+# LICENSE
 
-The `PaxHeaders.15050` folder should not be used, unless you know how to fix the issues those files cause. In which case, please fix them and submit a pull request so that I have a working copy for anyone to download. The language used to create the module is unfamiliar to me. So I'll leave that to those that know how to write such things.
+Unknown. Was written by Janus on MagicStar Network.
