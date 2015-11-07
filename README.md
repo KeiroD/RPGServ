@@ -3,7 +3,7 @@ RPGServ for Anope.
 
 # Installation Process
 
-You want to drop the `rpgserv` folder into `src/modules` for Anope. Or simply extract the contents of `rpgserv` into `src/modules` instead of plopping the folder into `src/modules`.
+You want to drop the `rpgserv` folder into `modules` for Anope. Or simply extract the contents of `rpgserv` into `modules` instead of plopping the folder into `modules`.
 
 Either way, it works just the same.
 
