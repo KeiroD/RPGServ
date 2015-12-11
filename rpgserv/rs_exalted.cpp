@@ -52,6 +52,7 @@ class CommandRSExalted : public Command
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
 		User *u = source.GetUser();
       User *u2 = NULL;
+	  srand(time(NULL));
 		if(!dice.is_number_only() || dice[0]=='-' || dice[0]=='+' || flags.find_first_of("ynYN") == Anope::string::npos) {
 			this->SendSyntax(source);
 			return;

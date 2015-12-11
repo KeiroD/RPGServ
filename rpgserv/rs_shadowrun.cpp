@@ -47,6 +47,7 @@ class CommandRSShadowrun : public Command
 		Anope::string target = "";
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
       User *u2 = NULL;
+	  srand(time(NULL));
 		User *u = source.GetUser();
 		if(!dice.is_number_only() || !difficulty.is_number_only()) {
 			this->SendSyntax(source);

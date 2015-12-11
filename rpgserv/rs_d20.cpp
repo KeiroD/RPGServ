@@ -52,6 +52,7 @@ class CommandRSd20 : public Command
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
 		User *u = source.GetUser();
       User *u2 = NULL;
+	  srand(time(NULL));
 		if(!difficulty.is_pos_number_only()) {
 			this->SendSyntax(source);
 			return;
