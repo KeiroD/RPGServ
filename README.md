@@ -1,17 +1,31 @@
 # RPGServ
-RPGServ for Anope.
+RPGServ for Anope. RPGServ is a Role-Playing Game Server. A `pseudoclient` that works with `Anope`, the IRC Services package commonly used on most networks these days.
 
-# Installation Process
+# How to Install RPGServ
 
-You want to drop the `rpgserv` folder into `modules` for Anope. Or simply extract the contents of `rpgserv` into `modules` instead of plopping the folder into `modules`.
+In a `terminal`, download `RPGServ` like so, inside Anope's `module` directory:
 
-Either way, it works just the same.
+`wget https://github.com/KeiroD/RPGServ/archive/master.zip`
+
+`unzip master.zip`
+
+`cd rpgserv; mv * ..; cd ..; rm -rf rpgserv/`
+
+By this point, you should've had the contents of `master.zip` in `modules` and no trace of `rpgserv/`.
 
 # RPGServ Configuration
 
-To have RPGServ work, you need to have an `rpgserv.conf` in the `conf` folder for Services so that it can automatically come online with Services when it's started.
+To have RPGServ come online along with the rest of `Services`, you need to have an `rpgserv.conf` in the `conf` folder for Services so that it can automatically come online with Services when it's started.
 
-A sample `rpgserv.conf` has been provided. Adapt as you see fit.
+A sample `rpgserv.conf` has been provided. Adapt as you see fit. Then `cp rpgserv.conf` to `services/conf` and edit `modules.conf` to include `RPGServ`. e.g., 
+
+```
+include
+{
+        type = "file"
+        name = "rpgserv.conf"
+}
+```
 
 ## General Usage for RPGServ
 Once `RPGServ` is loaded into `Anope`, the following commands and how to use it are made available in `irc`. Output was formatted by `mIRC`.
@@ -44,7 +58,7 @@ Once `RPGServ` is loaded into `Anope`, the following commands and how to use it 
 ```
 So, for example, if you wanted `RPGServ` to act out something for you in say, `#tavern`, you could do so via `/msg rpgserv act #tavern welcomes a guard into the tavern with a smile` and you'll get an output in `#tavern` of `RPGServ` doing its thing, similar to the below:
 
-[04:28:16AM] * <RPGServ> welcomes a guard into the tavern with a smile
+`[04:28:16AM] * <RPGServ> welcomes a guard into the tavern with a smile`
 
 # LICENSE
 
