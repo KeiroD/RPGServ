@@ -55,7 +55,6 @@ class CommandRSRollPlus : public Command
 		int i;
 		int total = 0;
 		User *u2 = NULL;
-		srand(time(NULL));
 		int dicerolls[10000];
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
 		User *u = source.GetUser();

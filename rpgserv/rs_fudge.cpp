@@ -49,7 +49,6 @@ class CommandRSFudge : public Command
       int myroll;
 		int total = 0;
 		User *u2 = NULL;
-		srand(time(NULL));
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
 		User *u = source.GetUser();
       if (dice.empty() || !dice.is_pos_number_only() )
