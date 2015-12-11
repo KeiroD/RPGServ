@@ -73,7 +73,7 @@ class CommandRSAct : public Command
 	bool OnHelp(CommandSource &source, const Anope::string &subcommand) anope_override
 	{
 		this->SendSyntax(source);
-		source.Reply(" \n");
+		source.Reply(" ");
 		source.Reply(_("Performs an action in channel\n"
 			"Note: This command is ALWAYS logged.\n"
 			" \n"));
