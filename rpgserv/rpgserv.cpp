@@ -1394,6 +1394,7 @@ class CommandRSRoll : public Command
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
 		User *u = source.GetUser();
       User *u2 = NULL;
+	  srand(time(NULL));
 		DiceErrCode=DICE_ERR_NONE;
 		DiceErrNum=0;
 		DiceErrPos=0;
@@ -1607,6 +1608,7 @@ class CommandRSCalc : public Command
 		BotInfo *bi = BotInfo::Find(source.service->nick.c_str());
 		User *u = source.GetUser();
       User *u2 = NULL;
+	  srand(time(NULL));
 		DiceErrCode=DICE_ERR_NONE;
 		DiceErrNum=0;
 		DiceErrPos=0;
