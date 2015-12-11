@@ -42,7 +42,9 @@ Once `RPGServ` is loaded into `Anope`, the following commands and how to use it 
 [04:17:15AM] -RPGServ- Note: This command is ALWAYS logged.
 [04:17:15AM] -RPGServ-
 ```
-So, for example, if you wanted `RPGServ` to act out something for you in say, `#help`, you could do so via `/msg rpgserv act #tavern welcomes a guard into the tavern with a smile` and you'll get an output in `#tavern` of `RPGServ` doing its thing.
+So, for example, if you wanted `RPGServ` to act out something for you in say, `#tavern`, you could do so via `/msg rpgserv act #tavern welcomes a guard into the tavern with a smile` and you'll get an output in `#tavern` of `RPGServ` doing its thing, similar to the below:
+
+[04:28:16AM] * <RPGServ> welcomes a guard into the tavern with a smile
 
 # LICENSE
 
