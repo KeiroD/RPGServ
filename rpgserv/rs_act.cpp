@@ -44,6 +44,10 @@ class CommandRSAct : public Command
 						return;
 					}
 				}
+				else
+                                {
+                                        target = ci->name.c_str();
+                                }
 			}
 		}
 		else
