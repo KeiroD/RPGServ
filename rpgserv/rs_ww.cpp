@@ -33,7 +33,7 @@ class CommandRSWw : public Command
 	CommandRSWw(Module *creator) : Command(creator, "rpgserv/ww", 2, 4)
 	{
 		this->SetDesc(_("Rolls dice using the Newer World of Darkness dice system.")) ;
-		this->SetSyntax(_("\002\037<#dice>\037 \037Chance (Y/N)\037 \037[where]\037 \037[message]\037\002"));
+		this->SetSyntax(_("\002\037<#dice>\037 \037Chance (Y/N)\037 \037#channel\037 \037[message]\037\002"));
 		this->AllowUnregistered(true);
 	}
 	void Execute(CommandSource &source, const std::vector<Anope::string> &params) anope_override

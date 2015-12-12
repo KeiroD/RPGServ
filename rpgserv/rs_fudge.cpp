@@ -34,7 +34,7 @@ class CommandRSFudge : public Command
 	CommandRSFudge(Module *creator) : Command(creator, "rpgserv/fudge", 1, 3)
 	{
 		this->SetDesc(_("Rolls a specifed number of fudge dice."));
-		this->SetSyntax(_("\002\037<dnumber of ice>\037 \037[where]\037 \037[message]\037\002"));
+		this->SetSyntax(_("\002\037<dnumber of ice>\037 \037#channel\037 \037[message]\037\002"));
 		this->AllowUnregistered(true);
 	}
 	void Execute(CommandSource &source, const std::vector<Anope::string> &params) anope_override

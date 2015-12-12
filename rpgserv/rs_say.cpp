@@ -10,7 +10,7 @@ class CommandRSSay : public Command
 	CommandRSSay(Module *creator) : Command(creator, "rpgserv/say", 1, 2)
 	{
 		this->SetDesc(_("Says something"));
-		this->SetSyntax(_("\002\037<where>\037 \037<message>\037\002"));
+		this->SetSyntax(_("\002\037#channel\037 \037<message>\037\002"));
 		this->AllowUnregistered(true);
 	}
 

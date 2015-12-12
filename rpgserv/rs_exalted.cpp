@@ -31,7 +31,7 @@ class CommandRSExalted : public Command
 	CommandRSExalted(Module *creator) : Command(creator, "rpgserv/exalted", 2, 4)
 	{
 		this->SetDesc(_("Rolls dice using the Exalted dice system.")) ;
-		this->SetSyntax(_("\002\037<#dice>\037 \037<Y/N>\037 \037[where]\037 \037[message]\037\002"));
+		this->SetSyntax(_("\002\037<#dice>\037 \037<Y/N>\037 \037#channel\037 \037[message]\037\002"));
 		this->AllowUnregistered(true);
 	}
 	void Execute(CommandSource &source, const std::vector<Anope::string> &params) anope_override

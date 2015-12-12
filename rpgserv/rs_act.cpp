@@ -10,7 +10,7 @@ class CommandRSAct : public Command
 	CommandRSAct(Module *creator) : Command(creator, "rpgserv/act", 1, 2)
 	{
 		this->SetDesc(_("Does something"));
-		this->SetSyntax(_("\002\037where\037 \037<what was done>\037\002"));
+		this->SetSyntax(_("\002\037#channel\037 \037<what was done>\037\002"));
 		this->AllowUnregistered(true);
 	}
 

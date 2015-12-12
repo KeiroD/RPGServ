@@ -31,7 +31,7 @@ class CommandRSd20 : public Command
 	CommandRSd20(Module *creator) : Command(creator, "rpgserv/d20", 2, 4)
 	{
 		this->SetDesc(_("Rolls a d20 die against a difficilty.")) ;
-		this->SetSyntax(_("\002\037<diff>\037 \037<+/-modifiers>\037 \037[where]\037 \037[message]\037\002"));
+		this->SetSyntax(_("\002\037<diff>\037 \037<+/-modifiers>\037 \037#channel\037 \037[message]\037\002"));
 		this->AllowUnregistered(true);
 	}
 	void Execute(CommandSource &source, const std::vector<Anope::string> &params) anope_override
