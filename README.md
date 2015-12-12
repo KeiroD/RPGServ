@@ -50,7 +50,7 @@ Once `RPGServ` is loaded into `Anope`, the following commands and how to use it 
 `/msg rpgserv help act`
 
 ```
-[04:17:15AM] -RPGServ- Syntax: act where <what was done>
+[04:17:15AM] -RPGServ- Syntax: act #channel <what was done>
 [04:17:15AM] -RPGServ-  
 [04:17:15AM] -RPGServ- Performs an action in channel
 [04:17:15AM] -RPGServ- Note: This command is ALWAYS logged.
